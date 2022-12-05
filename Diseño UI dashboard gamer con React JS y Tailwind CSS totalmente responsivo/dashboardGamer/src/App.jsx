@@ -197,11 +197,62 @@ function App() {
 
         </div>
         {/* Slide VideoGames */}
-        <div>
-          <h1>Games on sale</h1>
-          <div>
-            <RiArrowLeftCircleLine />
-            <RiArrowRightCircleLine />
+        <div className="mt-10 mb-6 flex items-center justify-between">
+          <h5 className="text-gray-300 text-2xl">Games on sale</h5>
+          <div className="text-gray-400 text-3xl flex items-center gap-4">
+            <RiArrowLeftCircleLine className="cursor-pointer" />
+            <RiArrowRightCircleLine className="cursor-pointer" />
+          </div>
+        </div>
+        {/* Videogames */}
+        <div className="grid lg:grid-cols-5">
+          <div className="p-4">
+            <img src="https://as01.epimg.net/meristation/imagenes/2021/01/26/cover/956560151611687466.jpg" 
+            className="w-full h-80 object-cover rounded-xl mb-2"
+            />
+            <h3 className="text-gray-300 text-lg">Valheim</h3>
+            <p className="text-gray-500 mb-3">Action games</p>
+            <span className="text-white">$8.15</span>
+          </div>
+          <div className="p-4">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/BioShock_cover.jpg" 
+            className="w-full h-80 object-cover rounded-xl mb-2"
+            />
+            <h3 className="text-gray-300 text-lg">Bioshock</h3>
+            <p className="text-gray-500 mb-3">Action, RPG</p>
+            <div className="flex items-center gap-2">
+              <span className="bg-green-300 p-1 text-green-800 rounded-lg">-80%</span>
+              <span className="text-gray-500">$50</span>
+              <span className="text-white">$8.15</span>
+            </div>
+          </div>
+          <div className="p-4">
+            <img src="https://image.api.playstation.com/cdn/UP0006/CUSA10483_00/7F2aA7ckAa0YROMt50NhDcwSaR31SE9a.png" 
+            className="w-full h-80 object-cover rounded-xl mb-2"
+            />
+            <h3 className="text-gray-300 text-lg">Unravel Two</h3>
+            <p className="text-gray-500 mb-3">Adventur games</p>
+            <span className="text-white">$20.38</span>
+          </div>
+          <div className="p-4">
+            <img src="https://images.nintendolife.com/66ed3b2a5f5e2/tick-tock-a-tale-for-two-cover.cover_large.jpg" 
+            className="w-full h-80 object-cover rounded-xl mb-2"
+            />
+            <h3 className="text-gray-300 text-lg">Tick Tock: A tale for two</h3>
+            <p className="text-gray-500 mb-3">Indie games</p>
+            <div className="flex items-center gap-2">
+              <span className="bg-green-300 p-1 text-green-800 rounded-lg">-60%</span>
+              <span className="text-gray-500">$3.47</span>
+              <span className="text-white">$1.39</span>
+            </div>
+          </div>
+          <div className="p-4">
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1659040/capsule_616x353.jpg?t=1645711397" 
+            className="w-full h-80 object-cover rounded-xl mb-2"
+            />
+            <h3 className="text-gray-300 text-lg">Hitman 3</h3>
+            <p className="text-gray-500 mb-3">Action games</p>
+            <span className="text-white">$23.99</span>
           </div>
         </div>
       </main>
