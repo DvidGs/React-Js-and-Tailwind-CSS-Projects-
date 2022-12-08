@@ -2,7 +2,27 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className='bg-secondary-100 p-8 rounded-xl'>
+      <h1 className='text-3xl uppercase font-bold tracking-[5px] text-white mb-8'>
+        Iniciar sesión
+      </h1>
+      <form>
+        <button className='flex items-center justify-center py-2 px-4 gap-4 bg-secondary-900 w-full rounded-full mb-8'>
+          <img 
+            src="https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png" 
+            className='w-4 h-4'
+          />
+          Ingresa con Google
+        </button>
+        <div>
+          <input 
+            type="email"
+            className="py-2 px-4 bg-secondary-900 w-full outline-none"
+            placeholder='Correo electrónico'
+          />
+        </div>
+      </form>
+    </div>
   )
 }
 
