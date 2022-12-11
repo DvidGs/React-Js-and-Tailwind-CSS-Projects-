@@ -6,6 +6,7 @@ import LayoutAdmin from "./layouts/LayoutAdmin";
 //pages auth
 import Login from "./pages/auth/Login";
 import Register from './pages/auth/Register';
+import ForgetPassword from './pages/auth/ForgetPassword';
 // Pages admin
 import Home from "./pages/admin/Home";
 import Chat from './pages/admin/Chat';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/auth" element={<LayoutAuth />}>
           <Route index element={<Login />} />
           <Route path="registro" element={<Register />} />
+          <Route path="olvide-password" element={<ForgetPassword />} />
         </Route>
         <Route path="/" element={<LayoutAdmin />}>  
           <Route index element={<Home />} />
